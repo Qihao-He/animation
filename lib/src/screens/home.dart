@@ -29,6 +29,7 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
         curve: Curves.easeInOut,
       ),
     );
+    
     boxAnimation.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         boxController.reverse();
