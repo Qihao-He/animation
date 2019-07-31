@@ -40,7 +40,7 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
       ),
       body: GestureDetector(
         child: Center(
-          child:Stack(
+          child: Stack(
             children: <Widget>[
               buildCatAnimation(),
               buildBox(),
