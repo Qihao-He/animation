@@ -3,7 +3,7 @@ import '../widgets/cat.dart';
 import 'dart:math';
 
 class Home extends StatefulWidget {
-  createState() => HomeState();
+  HomeState createState() => HomeState();
 }
 
 class HomeState extends State<Home> with TickerProviderStateMixin {
@@ -29,7 +29,7 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
         curve: Curves.easeInOut,
       ),
     );
-    
+
     boxAnimation.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         boxController.reverse();
